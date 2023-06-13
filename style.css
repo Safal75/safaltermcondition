@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    list-style: none;
+    text-decoration: none;
+}    
+
+:root {
+    --main-color:#2288ff ;
+    --second-color: #192f6a;
+    --text-color: #314862;
+    --bg-color: #fff;
+
+    /* Box Shadow */
+    --box-shadow:2px 2px 18pc rgb(14 52 54 / 15%) ;
+}
+img{
+    width: 100%;
+}
+body {
+    color:var(--text-color);
+}
+section {
+    padding: 4.5rem 0 3 rem;
+}
+
+.container {
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    display: block;
+    width: 100%;
+    background: var(--big-color);
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+header img {
+    max-width: 15%;
+    height: auto; 
+    position: fixed;
+    top: -3rem;
+    left: 15px;
+  }
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+.logo{
+    display: flex;
+    align-content: center;
+    column-gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.logo .bx {
+    font-size: 10px;
+    color: var(--main-color);
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    padding: 8px 17px;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar a:hover {
+    color: var(--main-color);
+}
+.btn {
+    padding: 8px 22px;
+    background: var(--main-color) ;
+    color: var(--bg-color);
+    border-radius: 5rem;
+}
+.btn:hover {
+    background: #3492fd;
+}
+
+
+.scroll-bg{
+    background: white;
+    width: 900px;
+    margin:  auto;
+    padding: 10px;
+    
+    /* filter:blur(10px) */
+}
+.scroll-bg  {
+    
+    background: linear-gradient(90deg, rgb(9, 3, 137) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    min-height: 100px;
+    width: 1000px;
+    display: fixed;
+    align-items: center;
+    justify-content: center;
+    
+      }
+.scroll-div{
+    max-width: 1200px;
+    max-height: 625px;
+    background-color: white;
+    color: black;
+   padding: 20px;
+    margin: 50px;
+    overflow: scroll;
+    text-align: justify;
+    line-height: 30px;
+}
